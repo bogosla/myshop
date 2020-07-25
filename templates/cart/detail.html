@@ -1,0 +1,11 @@
+{% extends 'shop/base.html' %}
+
+{% block content %}
+    <h1>lolo is best</h1>
+    {% for item in cart %}
+    {{ item.product.name }}
+    {{ item.quantity }}
+    {% empty %}
+    <h2>No item, empty.</h2>
+    {% endfor %}
+{% endblock %}
