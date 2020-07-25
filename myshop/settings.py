@@ -40,8 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
     'shop',
+    'cart',
 ]
 SITE_ID = 1 #new
+CART_SESSION_ID = 'cart'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
